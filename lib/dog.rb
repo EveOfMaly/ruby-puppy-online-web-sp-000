@@ -5,10 +5,18 @@ class Dog
   
   def initialize(puppy_name)
     @name = puppy_name
-    @@all << self
+     save
   end
   
   def self.all 
     @@all 
   end
+  
+  def self.print_all
+    @@all.each {|dog| puts dog}
+  end
+  
+  def save 
+     @@all << self
+  end 
 end 
