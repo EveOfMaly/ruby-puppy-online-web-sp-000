@@ -7,7 +7,7 @@ class Dog
   
   def initialize(puppy_name)
     @name = puppy_name
-     save
+     @save
   end
   
   def self.all 
@@ -22,7 +22,7 @@ class Dog
     @@all = []
   end
   
-  def save 
+  def @save 
      @@all << self
   end 
   binding.pry
